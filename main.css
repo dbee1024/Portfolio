@@ -1,6 +1,8 @@
 /* Add a black background color to the top navigation */
-html {
+body {
     font-family:'Acme', sans-serif;
+    background-image: url(img/bg.jpg);
+    background-color: white;
 }
 .topnav {
     background-color: lightgray;
@@ -30,11 +32,6 @@ html {
     color: white;
 }
 
-body {
-    background-image: url(img/bg.jpg);
-    background-color: white;
-    
-}
 .maintitle {
     color:black;
     font-size: 3.0em;
