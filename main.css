@@ -4,13 +4,13 @@ body {
     background-image: url(img/bg.jpg);
     background-color: white;
 }
-.topnav {
+.top-nav {
     background-color: lightgray;
     overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.top-nav a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -21,18 +21,18 @@ body {
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.top-nav a:hover {
     background-color: #ddd;
     color: black;
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+.top-nav a.active {
     background-color: #4CAF50;
     color: white;
 }
 
-.maintitle {
+.main-title {
     color:black;
     font-size: 3.0em;
     font-family: 'Acme', sans-serif;
