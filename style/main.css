@@ -1,0 +1,26 @@
+.nav-pills{
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 1.6em;
+    background-color: black;
+}
+
+body {
+    background-color:black;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+    position:relative;
+    top:1000px;
+}

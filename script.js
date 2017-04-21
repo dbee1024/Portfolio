@@ -1,1 +1,0 @@
-//some sort of window.onload / document.ready
