@@ -1,31 +1,125 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
-    <link href="style/main.css" rel="stylesheet">
-    <link href="style/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-  </head>
-<div class = "container-fluid">
-        <ul class = "nav nav-pills">
-            <li class ="pull-left"><a href="index.html">David's Studio</a></li>
-            <li class ="pull-right"><a href="#">About Me</a></li>
-            <li class ="pull-right"><a href="#">Projects</a></li>
-            <li class ="pull-right"><a href="#">Recipes</a></li>
-            <li class ="pull-right"><a href="#">Contact Me</a></li>
-        </ul>
-</div>
-<body>
-    <h1>Hello World</h1>
-  
+<html lang="en">
+<head>
+  <title>David's Portfolio</title>
+<!--    favicon-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+<!--  <link href="style/bootstrap.min.css" rel="stylesheet">-->
+  <link href="style/main.css" rel="stylesheet">
+<!--  <script src="js/bootstrap.min.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/edfc1d924b.js"></script>
+</head>
     
-    <footer>
-        <small>&copy; Copyright 2058, DB Inc.</small>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="nav-container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">David's Portfolio</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Recipes">Recipes</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Blog">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h1>David's Portfolio</h1>  
+        <h3>Keep Learning, Keep Coding</h3>
+        <p>SF based aspiring Javascript and Ruby developer</p>
+      </div>
+        <h2>Search</h2>
+           <div id="custom-search-input">
+           <div class="input-group col-md-12">
+           <input type="text" class="  search-query form-control" placeholder="Search" />
+                <span class="input-group-btn">
+                    <button class="btn btn-danger" type="button">
+                        <span class=" glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+            </div>
+            </div>
+    </div>
+
+    <div class="container-fluid bg-3 text-center">    
+      <span id="Projects">Projects</span><br>
+      <div class="row">
+        <div class="col-sm-3">
+          <p>Bloc Jams</p>
+            <div id="wrapper">
+                <img src="https://d13yacurqjgara.cloudfront.net/users/70542/screenshots/1474463/blocjams_1x.png" class="hover" style="width:100%" alt="Image">
+                <div class="text">Play Some Music!</div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+          <p>Bloc Chat</p>
+          <img src="img/chat.jpg" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-3">
+          <p>Blocipedia</p>
+          <img src="img/bloc.png" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-3">
+          <p>project 4.</p>
+          <img src="img/alexa.jpg" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+      </div>
+    </div><br>
+
+   
+ <div class="container-fluid bg-3 text-center">  
+    <span id="About">
+        <h1>About Me</h1>
+        <p>something about me</p>
+
+    </span>
+
+    <span id="Recipes">
+        <h1>Recipes</h1>
+        <h3>Shio Shoyu Ramen</h3>
+        <p>In a large, deep saucepan, heat sesame oil over low heat. Add garlic and ginger; cook, stirring, until softened, about 5 minutes. Add soup base and bring to a boil over medium-high heat. <br>
+        Meanwhile, bring a large pot of water to a boil over high heat. Add ramen noodles and cook, stirring, for 2 minutes; drain and set aside.<br>
+        Stir soy sauce, sake, sea salt, mirin, and sugar into soup base mixture. Strain into 2 serving bowls; divide ramen evenly between bowls. Serve immediately with desired toppings.</p>
+        
+    </span>
+    
+    <span id="Blog">
+        <h1>My Bloc Experience</h1>
+            <p class="blog content">
+        It's been couple of months now since I started Bloc, it's been been both fun and challenging. Some topics are more abstract to grasp than others, such as Hoisting, prototypes inheritance, closure, etc. I enjoy coding in javascript comparing to python and java. JS is very lenient and versatile, sometimes to a point where you'd be breaking so many rules in other languages. Coding challenges, by far, has been the hardest parts along with the abstract concepts. They teach me to think differently, approaching a problem in a non-linear way.
+            </p>
+    </span>
+    <span id="Contact">
+        <h1>Contact</h1>
+        <p>Email: david.bradshaw90@gmail.com</p>
+    </span> 
+</div>
+    <footer class="container-fluid text-center">
+        <p>DB's Inc</p>
+        <ul class="container text-center">
+             <a href="#"><i class="fa fa-facebook-square" style="font-size:36px"></i></a>
+             <a href="#"><i class="fa fa-twitter-square" style="font-size:36px"></i></a>
+             <a href="#"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+             <a href="#"><i class="fa fa-google-plus-official" aria-hidden="true" style="font-size:36px"></i></a>
+        </ul>
     </footer>
-</body>  
+    
+</body>
 </html>
